@@ -118,7 +118,7 @@ app.on('ready', function() {
     };
 
     if (!app.dock) {
-        var appIcon = new Tray(__dirname + '/img/logo_tray22.png');
+        var appIcon = new Tray(__dirname + '/img/logo_tray.png');
         appIcon.setToolTip('Movim');
         const contextMenu = Menu.buildFromTemplate([
             {
@@ -187,11 +187,11 @@ app.on('ready', function() {
             if(app.dock) {
                 app.dock.bounce();
             } else {
-                appIcon.setImage(path.join(__dirname, '/img/logo_tray_notifs22.png'));
+                appIcon.setImage(path.join(__dirname, '/img/logo_tray_notifs.png'));
             }
         } else {
             if(!app.dock) {
-                appIcon.setImage(path.join(__dirname, '/img/logo_tray22.png'));
+                appIcon.setImage(path.join(__dirname, '/img/logo_tray.png'));
             }
         }
     });
