@@ -109,11 +109,12 @@ app.on('ready', function() {
     });
 
     const showHide = function() {
-        if(mainWindow.isVisible()) {
+        if(mainWindow.isVisible() && mainWindow.isFocused()) {
             mainWindow.hide();
         }
         else {
             mainWindow.show();
+            mainWindow.focus();
         }
     };
 
