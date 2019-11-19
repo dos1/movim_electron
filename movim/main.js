@@ -178,7 +178,7 @@ app.on('ready', function() {
     });
 
     mainWindow.webContents.on('did-fail-load', function(event, errorCode, errorDescription, validatedURL, isMainFrame) {
-        if (isMainFrame) {
+        if (isMainFrame && errorCode != -3) {
             mainWindow.loadURL('file://' + __dirname + '/error.html');
         }
     });
