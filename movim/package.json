@@ -1,13 +1,13 @@
 {
   "name": "movim-desktop",
   "productName": "Movim",
-  "version": "0.13.90",
+  "version": "0.15.90",
   "description": "Movim is a kickass distributed social networking platform that protect your privacy an comes with a set of awesome features.",
   "author": "Timothée Jaussoin <edhelas@movim.eu>",
   "main": "main.js",
   "homepage": "https://movim.eu",
   "devDependencies": {
-    "electron": "^2.0.7"
+    "electron": "^7.1.1"
   },
   "dependencies": {
     "electron-context-menu": "^0.10.0",
